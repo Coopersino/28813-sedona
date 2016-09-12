@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="page-header__logo"></div>
+    <nav class="main-nav  main-nav--opened  main-nav--nojs">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a href="photo.html">фото и видео</a></li>
+          <li class="main-nav__item  main-nav__item--active"><a>Форма отзыва</a></li>
+          <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <h1>Оставьте свой отзыв</h1>
+    <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    <h3>Представьтесь, пожалуйста:</h3>
+    <form method="post">
+      <label for="login-field">Имя:</label>
+      <input type="text" name="Name" id="login-field" value="Петр">
+      <label for="login-field">Фамилия:</label>
+      <input type="text" name="login" id="login-field" value="Иванов">
+      <label for="login-field">Отчество:</label>
+      <input type="text" name="login" id="login-field" value="Александрович">
+      <h3>Контактная информация:</h3>
+      <label for="login-field">Контактный телефон:</label>
+      <input type="text" name="login" id="login-field" value="Введите телефон">
+      <label for="login-field">Электронная почта:</label>
+      <input type="text" name="login" id="login-field" value="Введите e-mail">
+      <h3>Ваше общее впечатление:</h3>
+      <input type="radio" name="experience">
+      <label for="login-field">Скорее положительное</label>
+      <input type="radio" name="experience">
+      <label for="login-field">Скорее отрицательное</label>
+      <input type="radio" name="experience">
+      <label for="login-field">Затрудняюсь ответить</label>
+      <h3>Посещенные достопримечательности:</h3>
+      <input type="checkbox" checked>
+      <label for="login-field">Мост Дьявола</label>
+      <input type="checkbox" checked>
+      <label for="login-field">Слайд-парк</label>
+      <input type="checkbox" checked>
+      <label for="login-field">Гора-Колокол</label>
+      <input type="checkbox" checked>
+      <label for="login-field">Красные скалы</label>
+      <h3>Опишите свои эмоции:</h3>
+      <textarea name="comment" id="comment-field" rows="10">Опишите подробно все свои восторги</textarea>
+      <input type="submit" value="Отправить отзыв">
+    </form>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <span class="hashtag">#visitSEDONA</span>
+      <p class="page-footer__social">
+        <span class="social-links">
+          <a class="social-link  social-link--twitter" href="#">twitter</a>
+          <a class="social-link  social-link--facebook" href="#">facebook</a>
+          <a class="social-link  social-link--youtube" href="#">youtube</a>
+        </span>
+      </p>
+      <p class="page-footer__copyright">
+        Разработано:
+        <a class="btn  page-footer__copiright-link" href="https://htmlacademy.ru">
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>
