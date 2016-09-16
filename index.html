@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Index</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
@@ -16,7 +17,7 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item  main-nav__item--active"><a>Главная</a></li>
-          <li class="main-nav__item"><a href="photo.html">фото и видео</a></li>
+          <li class="main-nav__item"><a href="photo.html">Фото и видео</a></li>
           <li class="main-nav__item"><a href="form.html">Форма отзыва</a></li>
           <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
         </ul>
@@ -28,46 +29,73 @@
       </a>
     </div>
   </header>
-  <main class="page-main  wrapper">
-    <h1>Седона — небольшой городок в аризоне, заслуживающий большего!</h1>
-    <p>Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
-    <h3>Настоящий городок</h3>
-    <span> — №1 — </span>
-    <p>Седона не аттракцион для туристов, там течет своя жизнь</p>
-    <div class="features">
-      <ul>
-        <li>
-          <h4>Жилье</h4>
-          <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-        </li>
-        <li>
-          <h4>Сувениры</h4>
-          <p>Не только китайского, но и местного производства!</p>
-        </li>
-        <li>
-          <h4>Еда</h4>
-          <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-        </li>
-      </ul>
-    </div>
-    <h3>Там есть мост дьявола</h3>
-    <span> — №2 — </span>
-    <p>Да, по нему можно пройти! Если конечно вы осмелитесь </p>
-    <h3>Небольшая площать</h3>
-    <span> — №3 — </span>
-    <p>Все достопримечательности находятся очень близко</p>
-    <h3>Красивая дорога</h3>
-    <span> — №4 — </span>
-    <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-    <h3>Мало туристов</h3>
-    <span> — №5 — </span>
-    <p>Большинство едет в гранд каньон и толпится там</p>
-    <h2>Заинтересовались?</h2>
-    <p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне</p>
-    <button>найти гостиницу</button>
-    <div class="map-holder"></div>
+  <main class="page-main">
+    <section class="page-main__slogan">
+      <h1 class="page-main__slogan-title">Седона — небольшой городок в  Аризоне, заслуживающий большего!</h1>
+      <p class="page-main__slogan-text">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
+    </section>
+    <section class="features-list">
+      <div class="features-item features-item--selected">
+        <div class="features-wrapper">
+          <h3 lass="features-item__title features-item__title--selected">Настоящий городок</h3>
+          <span class="features-item__number features-item__number--selected"> — №1 — </span>
+          <p class="features-item__text features-item__text--selected">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          <ul class="features-item__options-list">
+            <li>
+              <h4 class="options-item__title">Жилье</h4>
+              <p class="options-item__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </li>
+            <li>
+              <h4 class="options-item__title">Сувениры</h4>
+              <p class="options-item__text">Не только китайского, но и местного производства!</p>
+            </li>
+            <li>
+              <h4 class="options-item__title">Еда</h4>
+              <p class="options-item__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="features-item features-item--selected">
+        <div class="features-wrapper">
+          <h3 class="features-item__title features-item__title--selected">Там есть мост дьявола</h3>
+          <span class="features-item__number features-item__number--selected"> — №2 — </span>
+          <p class="features-item__text features-item__text--selected">Да, по нему можно пройти! Если конечно вы осмелитесь </p>
+        </div>
+      </div>
+      <div class="features-item">
+        <div class="features-wrapper">
+          <h3 class="features-item__title">Небольшая площать</h3>
+          <span class="features-item__number"> — №3 — </span>
+          <p class="features-item__text">Все достопримечательности находятся очень близко</p>
+        </div>
+      </div>
+      <div class="features-item">
+        <div class="features-wrapper">
+          <h3 class="features-item__title">Красивая дорога</h3>
+          <span class="features-item__number"> — №4 — </span>
+          <p class="features-item__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </div>
+      </div>
+      <div class="features-item">
+        <div class="features-wrapper">
+          <h3 class="features-item__title">Мало туристов</h3>
+          <span class="features-item__number"> — №5 — </span>
+          <p class="features-item__text">Большинство едет в гранд каньон и толпится там</p>
+        </div>
+      </div>
+      <div class="hotel-searcher">
+        <h2 class="hotel-searcher__title">Заинтересовались?</h2>
+        <p class="hotel-searcher__text">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <button class="btn">найти гостиницу</button>
+      </div>
+      <section class="map-holder">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d704343.7293175281!2d-111.92619618503794!3d34.90854978480757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1462947079088"
+            width="320" height="350" style="border:0" allowfullscreen></iframe>
+      </section>
+    </section>
   </main>
-  <footer class="page-footer  container">
+  <footer class="page-footer">
     <span class="hashtag">#visitSEDONA</span>
     <div class="social-icons">
       <ul>
