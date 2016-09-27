@@ -1,8 +1,52 @@
-.hashtag{width: 136px;
-  height: 16px;
-  color: black;
+.page-footer{
+  min-height: 243px;
+  display: block;
+}
+.page-footer__wrapper{
+  .clearfix();
+}
+.page-footer__hashtag{
+  width: 100%;
+  float: left;
+  display: inline-block;
+  text-align: center;
   font-family: PTSans;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
-  text-transform: uppercase;}
+  text-transform: uppercase;
+}
+.page-footer__social{
+  width: 100%;
+  display: block;
+  float: left;
+}
+.page-footer__copyright{
+  width: 100%;
+  min-height: 98px;
+  display: block;
+  float: left;
+}
+.page-footer__copyright-link{
+  text-decoration: none;
+  text-transform: uppercase;
+}
+@media @tablet-widths {
+  .page-footer {
+    padding-top: 17px;
+    min-height: 105px;
+}
+  .page-footer__hashtag{
+    display: block;
+    width: 33%;
+  }
+  .page-footer__social{
+    width: 33%;
+    display: block;
+  }
+  .page-footer__copyright{
+    width: 33%;
+    display: block;
+    min-height: 0;
+  }
+}
