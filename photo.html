@@ -11,21 +11,21 @@
 
 <body>
   <header class="page-header">
-    <div class="page-header__logo"></div>
-    <nav class="main-nav  main-nav--opened  main-nav--nojs">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+    <nav class="main-nav  main-nav--closed  main-nav--nojs">
+      <button class="main-nav__close-mnu" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item"><a href="index.html">Главная</a></li>
-          <li class="main-nav__item  main-nav__item--active"><a>Фото и видео</a></li>
+          <li class="main-nav__item main-nav__item--active"><a>Фото и видео</a></li>
           <li class="main-nav__item"><a href="form.html">Форма отзыва</a></li>
           <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
         </ul>
       </div>
+      <button class="main-nav__toggle" type="button">Закрыть меню</button>
     </nav>
     <div class="page-header__logo">
-      <a href="index.html" class="page-header__logo">
-        <img src="http://placehold.it/102x83" width="102" height="83" alt="Sedona-logo" class="Sedona-logo">
+      <a href="index.html">
+        <img class="page-header__sedona-logo-pick" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Sedona-logo">
       </a>
     </div>
   </header>
@@ -34,54 +34,80 @@
       <h1 class="page-main__slogan-title">Фото и видео</h1>
       <p class="page-main__slogan-text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
     </section>
-    <section class="gallary">
-      <div class="phot-item">
-        <div class="photo">
-          <img src="img/photo-1-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы">
-        </div>
-        <div class="photo-desc">
-          <div class="photo-desc__title">Неродные просторы</div>
-          <div class="photo-desc__autor">Автор фото: Борис</div>
-          <div class="photo-desc__likes-counter">1350</div>
-        </div>
+    <section class="gallery">
+      <div class="gallery__wrapper">
+        <article class="photo-item">
+          <div class="photo-item__img-wrapper">
+            <img src="img/photo-1-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы">
+          </div>
+          <div class="photo-desc">
+            <div class="photo-desc__info-block">
+              <div class="photo-desc__title">Неродные просторы</div>
+              <div class="photo-desc__autor">Автор фото: Борис</div>
+            </div>
+            <div class="photo-desc__likes-counter">
+              <div class="like-btn"></div>
+              <div class="score">1350</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="photo-item">
+          <div class="photo-item__img-wrapper">
+            <img src="img/photo-2-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы">
+          </div>
+          <div class="photo-desc">
+            <div class="photo-desc">
+              <div class="photo-desc__info-block">
+                <div class="photo-desc__title">Местная растительность</div>
+                <div class="photo-desc__autor">Автор фото: Сергей</div>
+              </div>
+            </div>
+            <div class="photo-desc__likes-counter">
+              <div class="like-btn"></div>
+              <div class="score">143</div>
+            </div>
+          </div>
+        </article>
+        <article class="photo-item">
+          <div class="photo-item__img-wrapper">
+            <img src="img/photo-3-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы">
+          </div>
+          <div class="photo-desc">
+            <div class="photo-desc__info-block">
+              <div class="photo-desc__title">Дорога на север</div>
+              <div class="photo-desc__autor">Автор фото: Петр</div>
+            </div>
+            <div class="photo-desc__likes-counter">
+              <div class="like-btn"></div>
+              <div class="score">96</div>
+            </div>
+          </div>
+        </article>
+        <article class="photo-item">
+          <div class="photo-item__img-wrapper">
+            <img src="img/photo-4-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы">
+          </div>
+          <div class="photo-desc">
+            <div class="photo-desc__info-block">
+              <div class="photo-desc__title">Мост дьявола</div>
+              <div class="photo-desc__autor">Автор фото: Антон</div>
+            </div>
+          </div>
+          <div class="photo-desc__likes-counter">
+            <div class="like-btn"></div>
+            <div class="score">254</div>
+          </div>
       </div>
-      <div class="phot-item">
-        <div class="photo">
-          <img src="img/photo-2-mobile@1x.jpg" width="280" height="280" alt="Местная растительность">
-        </div>
-        <div class="photo-desc">
-          <div class="photo-desc__title">Местная растительность</div>
-          <div class="photo-desc__autor">Автор фото: Сергей</div>
-          <div class="photo-desc__likes-counter">143</div>
-        </div>
-      </div>
-      <div class="phot-item">
-        <div class="photo">
-          <img src="img/photo-3-mobile@1x.jpg" width="280" height="280" alt="Дорога на север">
-        </div>
-        <div class="photo-desc">
-          <div class="photo-desc__title">Дорога на север</div>
-          <div class="photo-desc__autor">Автор фото: Петр</div>
-          <div class="photo-desc__likes-counter">96</div>
-        </div>
-      </div>
-      <div class="photo__item">
-        <div class="photo">
-          <img src="img/photo-4-mobile@1x.jpg" width="280" height="280" alt="Мост дьявола">
-        </div>
-        <div class="photo-desc">
-          <div class="photo-desc__title">Мост дьявола</div>
-          <div class="photo-desc__autor">Автор фото: Антон</div>
-          <div class="photo-desc__likes-counter">254</div>
-        </div>
-      </div>
+      </article>
+
     </section>
     <section class="video-presentation">
       <h2>Все еще сомневаетесь?</h2>
       <p>Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
       <div class="video-player">
         <img src="img/video-mobile@1x.jpg" width="320" height="200">
-        <div class="video-player_controls">
+        <div class="video-player__controls">
           <div class="scale">
             <div class="scale__bar"></div>
           </div>
@@ -96,18 +122,22 @@
     </section>
   </main>
   <footer class="page-footer">
-    <span class="hashtag">#visitSEDONA</span>
-    <div class="social-icons">
-      <ul>
-        <li><a href="#" class="social-link  social-link--twitter">twitter</a></li>
-        <li><a href="#" class="social-link  social-link--facebook">facebook</a></li>
-        <li><a href="#" class="social-link  social-link--youtube">youtube</a></li>
-      </ul>
+    <div class="page-footer__wrapper">
+      <p class="page-footer__hashtag">#visitSEDONA</p>
+      <p class="page-footer__social">
+        <span class="social-links">
+          <a class="social-link  social-link--twitter" href="https://twitter.com/htmlacademy_ru">twitter</a>
+          <a class="social-link  social-link--facebook" href="https://www.facebook.com/htmlacademy">facebook</a>
+          <a class="social-link  social-link--youtube" href="https://www.youtube.com/user/htmlacademyru">youtube</a>
+        </span>
+      </p>
+      <p class="page-footer__copyright">
+        <a href="https://htmlacademy.ru/" class="page-footer__copyright-link">
+          Разработано
+          <img src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+        </a>
+      </p>
     </div>
-    <a href="https://htmlacademy.ru/" class="copyright">
-      <p class="copyright__text">Разработано</p>
-      <img src="http://placehold.it/27x34" width="27" height="34" alt="HTMLACADEMY-logo" class="copyright__logo">
-    </a>
   </footer>
 </body>
 
