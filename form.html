@@ -11,9 +11,8 @@
 
 <body>
   <header class="page-header">
-    <div class="page-header__logo"></div>
     <nav class="main-nav  main-nav--closed  main-nav--nojs">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <button class="main-nav__close-mnu" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item"><a href="index.html">Главная</a></li>
@@ -22,18 +21,24 @@
           <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
         </ul>
       </div>
+      <button class="main-nav__toggle" type="button">Закрыть меню</button>
     </nav>
     <div class="page-header__logo">
-      <a href="index.html" class="page-header__logo">
-        <img src="http://placehold.it/102x83" width="102" height="83" alt="sedona-logo" class="sedona-logo">
+      <a href="index.html">
+        <img class="page-header__sedona-logo-pick" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Sedona-logo">
       </a>
     </div>
   </header>
   <main class="page-main">
+    <div class="page-main__intro-wrapper"></div>
     <section class="page-main__slogan">
+      <div class="slogan-picture">
+        <!-- <img src="img/bg-back-mobile@1x.jpg" width="320" height="389" alt="Sedona"> -->
+      </div>
       <h1 class="page-main__slogan-title">Оставьте свой отзыв</h1>
       <p class="page-main__slogan-text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     </section>
+
     <form class="feedback-form" action="https://echo.htmlacademy.ru" name="form-feedback" method="post">
       <fieldset class="feedback-form__fieldset">
         <h2 class="feedback-form__name">Представьтесь, пожалуйста:</h2>
@@ -47,7 +52,7 @@
         </div>
         <div class="feedback-form__item">
           <label class="input-label" for="user-patronymic">Отчество:</label>
-          <input class="input-text" type="text" id="user-dadname" name="user-patronymic" placeholder="Александрович" required>
+          <input class="input-text" type="text" id="user-patronymic" name="user-patronymic" placeholder="Александрович" required>
         </div>
       </fieldset>
       <fieldset class="feedback-form__contact-info">
@@ -101,18 +106,22 @@
     </form>
   </main>
   <footer class="page-footer">
-    <span class="hashtag">#visitSEDONA</span>
-    <div class="social-icons">
-      <ul>
-        <li><a href="#" class="social-link  social-link--twitter">twitter</a></li>
-        <li><a href="#" class="social-link  social-link--facebook">facebook</a></li>
-        <li><a href="#" class="social-link  social-link--youtube">youtube</a></li>
-      </ul>
+    <div class="page-footer__wrapper">
+      <p class="page-footer__hashtag">#visitSEDONA</p>
+      <p class="page-footer__social">
+        <span class="social-links">
+          <a class="social-link  social-link--twitter" href="https://twitter.com/htmlacademy_ru">twitter</a>
+          <a class="social-link  social-link--facebook" href="https://www.facebook.com/htmlacademy">facebook</a>
+          <a class="social-link  social-link--youtube" href="https://www.youtube.com/user/htmlacademyru">youtube</a>
+        </span>
+      </p>
+      <p class="page-footer__copyright">
+        <a href="https://htmlacademy.ru/" class="page-footer__copyright-link">
+          Разработано
+          <img src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+        </a>
+      </p>
     </div>
-    <a href="https://htmlacademy.ru/" class="copyright">
-      <p class="copyright__text">Разработано</p>
-      <img src="http://placehold.it/27x34" width="27" height="34" alt="HTMLACADEMY-logo" class="copyright__logo">
-    </a>
   </footer>
 </body>
 

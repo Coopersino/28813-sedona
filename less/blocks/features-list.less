@@ -1,0 +1,112 @@
+.features-list{
+  .clearfix();
+  display: block;
+  float: left;
+}
+.features-item__title{
+  text-transform: uppercase;
+  text-align: center;
+}
+.features-item__options-list li{
+  margin-left: 40px;
+}
+.features-item__options-list li:before{
+  background: url("/img/icon-burger.svg") no-repeat;
+  background-position: 0 15px;
+  content: url("/img/icon-burger.svg");
+  height: 15px;
+  width: 15px;
+}
+.features-item__title--selected{
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+.features-item__options-list{
+  background: #fff;
+  color: #000;
+  list-style: none;
+  text-transform: uppercase;
+}
+.features-item{
+  float: left;
+  min-height: 170px;
+  background: @block;
+}
+.features-item__desc{
+  margin-top: -1px;
+  padding-top: 1px;
+  min-height: 208px;
+  background: url("/img/bg-triangle.svg") no-repeat;
+  background-position: 0 -15px;
+}
+.features-item__options-list{
+  float: left;
+}
+@media @tablet-widths {
+  .features-item__title{
+    width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .features-item__desc{
+    background: none;
+    width: 33%;
+    float: left;
+    display: block;
+  }
+  .features-item:nth-child(2) .features-item__desc{
+    background: none;
+    width: 33%;
+    float: right;
+    display: block;
+  }
+  .features-item{
+    width: 33%;
+  }
+  .features-item--selected{
+    width: 100%;
+  }
+  .features-item__options-list li{
+    width: 33%;
+    display: block;
+    float: left;
+    text-align: center;
+    margin-left: 0;
+    background: #fff;
+  }
+  .feature-item__photo{
+    display: block;
+    float: right;
+    width: auto;
+  }
+  .feature-item__photo:nth-child(2){
+    display: block;
+    float: left;
+    width: auto;
+  }
+  .feature-item__photo img{
+    width: 500px;
+  }
+  .features-item__text{
+    width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.features-item__number{
+  text-transform: uppercase;
+  text-align: center;
+}
+.features-item__text{
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.features-item--selected{
+  background-color: @light-blue;
+  color: #fff;
+  text-transform:uppercase;
+  text-align: center;
+}
