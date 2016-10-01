@@ -40,7 +40,9 @@
   background: url("/img/bg-triangle.svg") no-repeat;
   background-position: 0 -15px;
 }
-
+.features-item__options-list{
+  float: left;
+}
 @media @tablet-widths {
   .features-item__title{
     width: 160px;
@@ -53,7 +55,7 @@
     float: left;
     display: block;
   }
-  .features-item__desc:nth-child(2){
+  .features-item:nth-child(2) .features-item__desc{
     background: none;
     width: 33%;
     float: right;
