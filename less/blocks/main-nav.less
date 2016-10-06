@@ -14,20 +14,28 @@
 .main-nav__list{
   margin: 0 0;
   padding: 0;
+  list-style: none;
 }
 
-.main-nav__item{
-  width: 280px;
+.main-nav__item a{
+  // width: 280px;
+  display: block;
   padding: 18px 20px;
   background-color: #81b3d2;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 0 rgba(1, 1, 1, 0.2);
-  text-align: center;
-  list-style-type: none;
 
-}
-.main-nav__item a{
+
   text-decoration: none;
   color: white;
+
+}
+
+
+.main-nav__item{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
 }
 .main-nav{
   position: relative;
@@ -35,9 +43,10 @@
 .main-nav__toggle{
   height: 26px;
   width: 26px;
-  position: absolute;
+  position: relative;
   margin-top: 13px;
-  left: 275px;
+  float: right;
+  right: 20px;
   font-size: 0;
   line-height: 0;
   background: url("../img/icon-menu.svg") no-repeat 50% 50%;
@@ -46,8 +55,9 @@
 }
 
 .main-nav__close-mnu{
-  position: absolute;
-  left: 280px;
+  position: relative;
+  float: right;
+  right: 20px;
   top: 18px;
   height: 26px;
   width: 26px;
@@ -61,7 +71,7 @@
 @media @tablet-widths {
 
   .main-nav__item{
-    display: inline-block;;
+
     width: 20%;
     padding: 18px 0;
     background-color: #fff;
@@ -75,10 +85,14 @@
     float: right;
   }
   .main-nav__item a{
-    text-decoration: none;
+    padding: 0;
+    background-color: #fff;
+    display: inline-block;
+    text-align: center;
     font-size: 14px;
     line-height: 26px;
     color: black;
+    box-shadow: none;
   }
   .main-nav__close-mnu{
     display: none;
@@ -96,5 +110,28 @@
 .page-header__logo{
   margin-left: auto;
   margin-right: auto;
-  width: 100px;
+  width: 102px;
+}
+.page-header__logo img{
+  height: 84px;
+}
+@media @mobile-widths-only {
+  .main-nav--closed .main-nav__wrapper{
+    display: none;
+  }
+  .main-nav--opened .main-nav__toggle{
+    background: url(../img/icon-cross.svg) no-repeat 50% 50%;
+  }
+  .main-nav__item a:hover{
+    background-color: #669ec0;
+  }
+  .main-nav__item a:active {background-color: #5496bd;
+  color: #91b7d1;}
+
+  .main-nav--nojs .main-nav__wrapper{
+    display: block;
+  }
+  .main-nav--nojs .main-nav__toggle{
+    display: none;
+  }
 }
