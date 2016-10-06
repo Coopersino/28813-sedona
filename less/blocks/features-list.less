@@ -7,8 +7,10 @@
 .features-item__title{
   text-transform: uppercase;
   text-align: center;
+  font-size: 18px;
+  line-height: 26px;
 }
-.features-item__options-list li{
+.features-item__options-list li:nth-child(1){
   // margin-left: 40px;
   margin-left: -15px;
   padding-top: 23px;
@@ -25,7 +27,11 @@
   background: url("/img/icon-burger.svg") no-repeat 34px 35px;
   background-size: 35px 34px;
 }
-.options-item__text, .options-item__title{
+.options-item__text{
+  text-align: left;
+  margin-left: 80px;
+}
+.options-item__title{
   text-align: left;
   margin-left: 80px;
 }
@@ -48,42 +54,40 @@
   list-style: none;
   text-transform: uppercase;
 }
+
 .features-item{
+  padding-top: 9px;
+  padding-bottom: 15px;
   width: 280px;
-margin-left: 20px;
-margin-right: 20px;
-float: left;
-min-height: 170px;
-background: @block;
-border-bottom: 1px solid gray;
+  margin-left: auto;
+  margin-right: auto;
+  // float: left;
+  // min-height: 170px;
+  background: @block;
+  border-bottom: 1px solid gray;
 }
 .features-item:last-child{
-border-bottom: none
+  border-bottom: none
 }
+// .features-item__desc{
+//   margin-top: -1px;
+//   padding-top: 47px;
+//   padding-bottom: 47px;
+//   background-position: 0 -15px;
+// }
 .features-item__desc{
-  margin-top: -1px;
+  margin-top: -9px;
   padding-top: 47px;
   padding-bottom: 47px;
-  background-position: 0 -15px;
-}
-
-
-.features-item__desc{
-  margin-top: -1px;
-  padding-top: 47px;
-  padding-bottom: 47px;
-  // background-position: 0 -15px;
-}
-.features-item__desc:nth-child(1){
-  background: url("/img/bg-triangle.svg") no-repeat;
-}
-.features-item__desc:nth-child(2){
-  background-image: none;
+  background-image: url("/img/bg-triangle.svg");
+  background-repeat: no-repeat;
 }
 .features-item__options-list{
   float: left;
 }
 .features-item__number{
+  font-family: @font-family;
+  margin-top: -8px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -97,6 +101,8 @@ border-bottom: none
     text-align: center;
 }
 .features-item--selected{
+  display: flex;
+  flex-direction: column;
   background-color: @light-blue;
   color: #fff;
   text-transform:uppercase;
@@ -105,15 +111,30 @@ border-bottom: none
   margin-left: 0;
   margin-right: 0;
 }
-
+.features-items-gray{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 @media @tablet-widths {
+  .features-item__options-list{
+    padding-top: 55px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    float: none;
+  }
   .features-item__title{
-    width: 160px;
-    margin-left: auto;
-    margin-right: auto;
+    // width: 160px;
+    text-align: center;
+    margin-left: 0;
+  }
+  .options-item__title {
+    text-align: center;
+    margin-left: 0;
   }
   .features-item__desc{
-    background: none;
+    background-image: none;
     width: 33%;
     float: left;
     display: block;
@@ -128,15 +149,17 @@ border-bottom: none
     width: 33%;
   }
   .features-item--selected{
+    flex-direction: row;
     width: 100%;
   }
   .features-item__options-list li{
+    // padding-top: 55px;
     width: 33%;
-    display: block;
-    float: left;
-    text-align: center;
-    margin-left: 0;
-    background: #fff;
+    // display: block;
+    // float: left;
+    // text-align: center;
+    // margin-left: 0;
+    // background: #fff;
   }
   .feature-item__photo{
     display: block;
@@ -155,5 +178,40 @@ border-bottom: none
     width: 160px;
     margin-left: auto;
     margin-right: auto;
+    text-align: left;
+  }
+  .options-item__text{
+    text-align: center;
+    margin-left: 0;
+  }
+  .features-item__options-list li:nth-child(1) {
+    padding-top: 15px;
+    margin-left: 0;
+    background: url(/img/icon-house.svg) no-repeat 50% 1px;
+    background-size: 35px 34px;
+  }
+  .features-item__options-list li:nth-child(2) {
+    margin-left: 0;
+    padding-top: 15px;
+    background: url(/img/icon-gift.svg) no-repeat 50% 1px;
+    background-size: 35px 34px;
+  }
+  .features-item__options-list li:nth-child(3) {
+    margin-left: 0;
+    padding-top: 15px;
+    background: url(/img/icon-burger.svg) no-repeat 50% 1px;
+    background-size: 35px 34px;
+  }
+  .features-items-gray{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .features-item{
+    border-bottom: none;
+  }
+  .features-item--selected:nth-child(3){
+    display: flex;
+    flex-direction: row-reverse;;
   }
 }
