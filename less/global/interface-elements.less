@@ -1,18 +1,119 @@
-.btn{
-  display: block;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 21px;
-  color: #fff;
-  background: #81b3d2;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 16px 40px;
+// .btn{
+//   display: block;
+//   text-align: center;
+//   text-transform: uppercase;
+//   font-size: 21px;
+//   color: #fff;
+//   background: #81b3d2;
+//   margin-left: auto;
+//   margin-right: auto;
+//   padding: 16px 40px;
+//   border: none;
+//   width: 280px;
+// }
+// .btn--search{
+//   display: block;
+//   text-decoration: none;
+//   margin: 0 auto 27px;
+//   width: 280px;
+// }
+// @media @tablet-widths {
+//   .btn {
+//     width: 458px;
+//   }
+//   .btn--submit {
+//     padding-left: 35px;
+//     width: 324px;
+//     float: left;
+//   }
+// }
+// @media @desktop-widths {
+//   .btn--submit {
+//     padding-left: 50px;
+//     width: 480px;
+//   }
+// }
+.btn {
+  background-color: @bg-color-base;
   border: none;
-  width: 100%;
+  color: @color-white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: @font-size-large;
+  font-weight: bold;
+  line-height: @line-height-base;
+  padding: 16px 47px;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
 }
+.btn:hover {
+  background-color: @bg-color-hover;
+}
+.btn:active {
+  background-color: @bg-color-active;
+  color: @color-active;
+}
+.btn--disabled {
+  background-color: @bg-color-disabled;
+  color: @color-white;
+}
+.btn--disabled:hover, .btn--disabled:active {
+  background-color: @bg-color-disabled;
+  color: @color-white;
+  cursor: default;
+}
+.btn--in-progress {
+  animation-iteration-count: infinite;
+  animation-name: change-color;
+  animation-duration: 1s;
+  cursor: default;
+}
+.btn--in-progress:hover,
+.btn--in-progress:active {
+  color: @color-white;
+  cursor: default;
+}
+.btn--feedback-submit {
+  font-size: @font-size-medium;
+  padding: 16px 76px;
+}
+.btn--something-wtf {
+  font-size: @font-size-medium;
+  padding: 16px 79px;
+}
+// @keyframes change-color {
+//   0% {
+//     background-color: #5496bd;
+//   }
+//   50% {
+//     background-color: #3e84ae;
+//   }
+//   100% {
+//     background-color: #5496bd;
+//   }
+// }
 @media @tablet-widths {
-  .btn {
-    width: 100%;
+  .btn--feedback-submit {
+    font-size: @font-size-large;
+    padding: 16px 155px;
+  }
+  .btn--search {
+    padding: 16px 0;
+    width: 458px;
+  }
+  .btn--wth {
+    font-size: @font-size-large;
+    padding: 16px 122px;
+  }
+  .btn--submit {
+    padding-left: 35px;
+    width: 324px;
+  }
+}
+@media @desktop-widths {
+  .btn--submit {
+    padding-left: 50px;
+    width: 480px;
   }
 }
