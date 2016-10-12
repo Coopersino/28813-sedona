@@ -1,0 +1,80 @@
+.top-header-cover {
+  margin-top: -33px;
+  background-color: #dbe9f2;
+  background-image: url("/img/bg-intro-triangle-mobile.svg"), url("/img/bg-back-mobile@1x.jpg");
+  background-position: 50% 100%, 50% bottom;
+  background-repeat: no-repeat;
+  margin-bottom: 38px;
+  min-height: 389px;
+  position: relative;
+}
+@media
+  (-webkit-min-device-pixel-ratio: 1.5),
+  (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx){
+    .top-header-cover {
+      background-image: url("/img/bg-intro-triangle-mobile.svg"), url("/img/bg-back-mobile@2x.jpg");
+    }
+  }
+.top-header-cover--inner-page {
+  min-height: 159px;
+}
+.top-header-cover__pic {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  top: 2px;
+  width: 280px;
+}
+.top-header-cover__pic--inner-page {
+  height: 40px;
+  top: 51px;
+}
+@media @tablet-widths {
+  .top-header-cover__pic {
+    margin-top: 56px;
+    width: 460px;
+  }
+  .top-header-cover {
+    background-image: url("/img/bg-intro-triangle-tablet.svg"), url("/img/bg-back-tablet@1x.jpg");
+    background-position: 50% 100%, 50% bottom;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+    margin-top: -88px;
+    min-height: 518px;
+  }
+  @media (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 768px),
+  (min-resolution: 144dpi) and (min-width: 768px),
+  (min-resolution: 1.5dppx) and (min-width: 768px){
+    .top-header-cover {
+      background-image: url("/img/bg-intro-triangle-tablet.svg"), url(/img/bg-back-tablet@2x.jpg);
+    }
+  }
+  .top-header-cover--inner-page {
+    margin-top: -88px;
+    min-height: 290px;
+  }
+  .top-header-cover__pic--inner-page {
+    height: 80px;
+    margin-top: 43px;
+  }
+}
+@media @desktop-widths {
+  .top-header-cover {
+    background-image: url("/img/bg-intro-triangle-desktop.svg"), url("/img/bg-back-desktop@1x.jpg");
+    background-position: 50% 100%, 50% bottom;
+    background-repeat: no-repeat;
+    margin-top: -100px;
+  }
+  @media (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 768px),
+  (min-resolution: 144dpi) and (min-width: 768px),
+  (min-resolution: 1.5dppx) and (min-width: 768px){
+    .top-header-cover {
+      background-image: url("/img/bg-intro-triangle-desktop.svg"), url(/img/bg-back-desktop@2x.jpg);
+    }
+  }
+  .top-header-cover--inner-page {
+    margin-top: -100px;
+    min-height: 301px;
+  }
+}

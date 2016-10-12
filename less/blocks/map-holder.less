@@ -1,5 +1,18 @@
-.map-holder{
-  height: 350px;
-  width: 100%;
-  float: left;
+.map-holder {
+  background-color: #f3f1ed;
+  background-image: url("/img/bg-map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  min-height: 350px;
+  margin-bottom: 35px;
+}
+@media @tablet-widths {
+  .map-holder {
+    background-image: url("/img/bg-map-tablet@1x.jpg");
+    margin-bottom: 55px;
+  }
+}
+@media @desktop-widths {
+  .map-holder {
+    background-image: url("/img/bg-map-tablet@1x.jpg");
+  }
 }
