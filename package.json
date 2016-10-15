@@ -16,6 +16,7 @@
     "@htmlacademy/editorconfig-cli": "0.0.7",
     "autoprefixer": "6.4.1",
     "browser-sync": "2.15.0",
+    "css-mqpacker": "^5.0.1",
     "del": "^2.2.2",
     "gulp": "3.9.1",
     "gulp-csso": "^2.0.0",
